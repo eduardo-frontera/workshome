@@ -1,0 +1,22 @@
+body {
+}
+
+.botoHeader{
+	visibility:hidden;
+	display:none;
+}
+
+#responsiveDesp{
+	visibility:visible;
+	display:block;
+	height:auto;
+	padding-left:15px;
+	padding-right:15px;
+	margin-top:15px;
+	margin-left:20px;
+	font-size:15px;
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:white;
+	float:left;
+	text-decoration:none;
+}

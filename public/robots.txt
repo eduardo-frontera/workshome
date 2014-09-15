@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /uploads/
+Disallow: /img/
+
+Sitemap: http://www.tecnoauto2012.com/htdocs/laravel/public/sitemap

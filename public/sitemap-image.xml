@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<!-- created by Clegent Online Sitemap Generator www.clegent.com -->
+<!-- Features of Clegent XML Sitemap generator: -->
+<!-- 1. It follows robots.txt file to exclude URLs. -->
+<!-- 2. It follows Meta Robots Tag to exclude URLs. -->
+<!-- 3. It follows Canonical Tags if you choose. -->
+<!-- 4. It does not add 404, 302, and 301 URLs. -->
+<!-- 5. It does not add Email Ids. -->
+<!-- 6. It excludes commented HTML code. -->
+<!-- 7. You can exclude all URLs from deep directories. -->
+	<url>
+		<loc>http://www.tecnoauto2012.com/htdocs/laravel/public/</loc>
+		<image:image>
+			<image:loc>http://www.tecnoauto2012.com/laravel/public/img/portada.jpg</image:loc>
+			<image:caption>Alumnos en clase</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://www.tecnoauto2012.com/laravel/public/img/share.png</image:loc>
+			<image:caption>Comparte archivos</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://www.tecnoauto2012.com/laravel/public/img/calendar.png</image:loc>
+			<image:caption>Define eventos</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://www.tecnoauto2012.com/laravel/public/img/tree.png</image:loc>
+			<image:caption>Ordena tus asignaturas</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://www.tecnoauto2012.com/laravel/public/img/group.png</image:loc>
+			<image:caption>Crea grupos</image:caption>
+		</image:image>
+	</url>
+</urlset>

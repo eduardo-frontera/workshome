@@ -1,0 +1,581 @@
+@charset "utf-8";
+/* CSS Document */
+
+/********************Estils generals********************/
+	
+html{
+	overflow-y:scroll;
+}	
+
+body.modal-open{
+	overflow:hidden;
+}
+
+#responsiveDesp{
+	visibility: hidden;
+	display:none;
+}	
+	
+a{
+	text-decoration:none;
+}
+
+body{
+}
+
+.txtArea{
+	max-width:583px;
+}
+
+.formContrasenya{
+	width:400px;
+	height:auto;
+	margin:auto;
+}
+
+/*Part alta estàtica de la pàgina*/
+header{
+	width:100%;
+	height:60px;
+	position: fixed; top: 0px; left: 0px;
+	background-color:rgb(44,62,80); 
+	box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.5);
+	border:rgb(31,44,57);
+	z-index:1000;
+}
+
+/*Dedins header*/
+.innerHeader{
+	width:1024px; 
+	margin:auto;
+}
+
+/*Peu de la pàgina principal*/
+footer{
+	width:100%;
+	height:110px;
+	margin:auto;
+	margin-top:15px;
+	background-color:rgb(44,62,80); 
+	box-shadow: rgba(0,0,0,0.5) 0px -3px 3px;
+	-moz-box-shadow: rgba(0,0,0,0.5) 0px -3px 3px;
+	-webkit-box-shadow: rgba(0,0,0,0.5) 0px -3px 3px;
+	clear:both;
+}
+
+/*Nom de la plana web situat al header*/
+.logo{
+	height:auto;
+	display:inline-block;
+	margin:auto;
+	margin-top:12px;
+	float:left;
+	font-size:24px;
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:rgb(24,188,156);
+	padding-right:15px;
+	text-decoration:none;
+}
+
+.logo:hover{
+	text-decoration:none;
+	color:rgb(24,188,156);
+}
+
+/*Estil d'un botó del header*/
+.botoHeader{
+	height:auto;
+	padding-left:15px;
+	padding-right:15px;
+	margin-top:15px;
+	margin-left:20px;
+	font-size:15px;
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:white;
+	float:left;
+	text-decoration:none;
+}
+
+.botoHeader:hover{
+	color:rgb(24,188,156);
+	text-decoration:none;
+}
+
+/*Contingut del cercador situat al header*/
+.cercador{
+	height:auto;
+	display:inline-block;	
+	margin-left:45px;
+}
+
+/*Defineix el cercador en si mateix*/
+.capaCercador{
+	margin-left:0px;
+	height:auto;
+	float:left;
+	display:inline-block;	
+	min-width:212px;
+}
+
+.botoCercar{
+	height:auto;
+	border:1px green solid;
+	display:inline-block;
+}
+
+/*Transició de l'input quan té el focus*/
+#box:focus{
+	width:300px;
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+/*Capa que engloba tota la informació de la pàgina*/
+.principal{
+	width:1024px;
+	min-height:500px;
+	margin:auto;
+	margin-top:70px;
+}
+
+/*Centrar formulari de dades*/
+.centrarForm{
+	width:426px;
+	height:auto;
+	margin:auto;
+}
+
+/*Defineix un botó de mida grossa*/
+.botoGran{
+	height:63px;
+	width:100%;
+	padding-top:18px;
+	padding-bottom:18px;
+	border-radius:6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding-left:27px;
+	padding-right:27px;
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:19px;	
+}
+
+/*Defineix un botó blau*/
+.botoBlau{
+	border-color:#2c3e50;
+	background-color:#2c3e50;
+	color:white;
+}
+
+.botoBlau:hover{
+	background-color:#1e2a36;	
+	border-color:#161f29;
+}
+
+/*Defineix un botó taronja*/
+.botoTaronja{
+	border-color:#dd4814;
+	background-color:#dd4814;
+	color:white;
+}
+
+.botoTaronja:hover{
+	background-color:#b83c11;	
+	border-color:#a5360f;
+}
+
+/*Barra lateral esquerra. Tag propi de HTML5*/
+aside{
+	width:200px;
+	height:100%;	
+	margin:auto;
+	margin-top:5px;
+	float:left;	
+	overflow:hidden;
+}
+
+/*Engloba els grups de l'estudiant que es mostren a l'aside*/
+.grups{
+	width:160px;
+	min-height:100px;
+	padding-top:3px;
+}
+
+/*Defineix el format del titol de grups*/
+.grups>.titol{
+	width:100%;
+	min-height:5px;
+	margin:auto;
+	font-family: Arial,Helvetica,Garuda,sans-serif;
+	font-size:14px;
+	display:inline-block;
+}
+
+/*Defineix la part central de la pàgina, 
+  on canvia constantment la informació*/
+section{
+	width:600px;
+	min-height:500px;
+	border-left:1px #dce4ec solid;
+	margin:auto;
+	margin-top:5px;
+	margin-bottom:10px;
+	padding-left:16px;
+	float:left;	
+	overflow:hidden;
+}
+
+/*Engloba els esdeveniments que es mostren a la barra lateral dreta*/
+.esdeveniments{
+	width:200px;
+	height:100%;
+	margin:auto;
+	margin-top:5px;
+	margin-left:20px;
+	float:left;	
+	overflow:hidden;
+}
+
+/*Defineix el titol dels esdeveniments*/
+.esdeveniments>.titol{
+	width:150px;
+	min-height:5px;
+	margin:auto;
+	font-family: Arial,Helvetica,Garuda,sans-serif;
+	font-size:14px;
+	display:inline-block;
+}
+
+/*Defineix el format d'un esdeveniment*/
+.esdeveniment{
+	height:auto;
+	margin-bottom:15px;
+}
+
+/*Defineix el format del nom d'un esdeveniment*/
+.esdeveniment>.nom{
+	display:inline-block;
+	float:left;
+}
+
+/*Defineix el format del temps de l'esdeveniment*/
+.esdeveniment>.temps{
+	margin-left:3px;
+	display:inline-block;
+}
+
+/********************INDEX********************/
+
+/*Quadre de benvinguda a la pàgina principal de la xarxa social*/
+.info{
+	width:688px;
+  	min-height:290px;
+	float:left;	
+}
+
+/*Quadre d'inici de sessió a la pàgina principal*/
+.login{
+	width:320px;
+	min-height:290px;
+	float:right;
+}
+
+/********************INFO ASSIGNATURA********************/
+
+/*Estils de la imatge de perfil de l'estudiant*/
+.imgPerfil{
+	float:left;
+}
+
+/*Deixa un marge per poder quadrar correctament la imatge de perfil*/
+.capaAportacio{
+	margin-left:55px;	
+}
+
+/*Input per incloure l'aportacio*/
+#boxText{
+	height:50px;
+	max-width:583px;
+}
+
+/*Format d'una aportació per part d'un alumne*/
+.aportacio{
+	padding-bottom:30px;
+	border-bottom: 1px #dce4ec solid;
+	margin-top:20px;
+	margin-bottom:4px;
+}
+
+/*Resposta d'un estudiant*/
+.resposta{
+	height:auto;
+}
+
+/*caixa de text per contestar a una aportació en una assignatura*/
+.inputResposta{
+	width:425px;
+	float:left;
+	margin-top:5px;
+}
+
+/*Botó per respondre*/
+.botoResposta{
+	margin-top:10px;
+	margin-left:5px;
+	display:inline-block;
+}
+
+/*Estil de l'input file*/
+.file_style{
+	background-color:red;
+}
+
+/*Estils de l'input file*/
+label.filebutton {
+    width:48px;
+    height:48px;
+    overflow:hidden;
+    position:relative;
+    background-image:url('https://cdn2.iconfinder.com/data/icons/picons-essentials/57/upload-48.png');
+}
+
+label span input {
+    z-index: 999;
+    line-height: 0;
+    font-size: 50px;
+    position: absolute;
+    top: -2px;
+    left: -700px;
+    opacity: 0;
+    filter: "alpha(opacity = 0);";
+    -ms-filter: "alpha(opacity=0)";
+    cursor: pointer;
+    margin: 0;
+    padding:0;
+}
+
+.txtFitxer{
+	margin-left:60px;
+	margin-top:10px;
+}
+
+/*Engloba la informació d'un grup a grups.meus*/
+.infoGrup{
+	padding-bottom:10px;
+	border-bottom: 1px #dce4ec solid;
+	margin-top:20px;
+	margin-bottom:4px;
+}
+
+/*Estil d'un comentari*/
+.comentari{
+	padding:5px;
+	margin:5px;
+	margin-left:10px;
+}
+
+/*Estil quan el comentari és d'un altre company*/
+.company{
+	border-left: 3px solid #2383c4;
+}
+
+/*Estil quan el comentari es propi*/
+.propi{
+	border-left: 3px solid #1e2a36;
+}
+
+/*Estil de visualització de la data d'una aportació o un comentari*/
+.estil_data{
+	font-size: 13px; 
+	font-family:Tahoma;
+	margin-top:7px;
+}
+
+/********************EDICIO ESTUDIANT**********************/
+
+.formEdicioEst{
+	width:426px;
+	height:auto;
+	margin-left:53px;
+}
+
+/********************CONSULTA ESTUDIANT********************/
+
+/*Informació bàsica d'un estudiant que apareix al seu perfil*/
+.dades_estudiant{
+	margin-top:15px;
+	margin-bottom:15px;
+}
+
+.imgPerfilEstudiant{
+	float:left;
+	overflow:hidden;
+	margin-right:5px;
+	margin-top:2px;
+}
+
+/*Estil icona moderar*/
+.moderar{
+	margin-left:5px;
+	display:inline-block;
+}
+
+/*Estil quan el titol està en format h4*/
+.modH4{
+	margin-top:10px;
+}
+
+/*Estil quan el titol està en format h1*/
+.modH1{
+	margin-top:30px;
+}
+
+.capcalera{
+	height:auto;
+	overflow:hidden;
+	margin-bottom:5px;
+}
+
+.imgAportacio{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:8px;
+	margin-bottom:8px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 3px solid #5e5e5e
+}
+
+.capaImatge{
+	background-color:#F0F0FE;
+	padding:3px;
+	margin-top:12px;
+	margin-bottom:3px;
+}
+
+
+/*ESTILS INDEX*/
+
+.subdiv{
+	width:1024px;
+	height:auto;
+	margin:auto;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+.box{
+	width:300px;
+	height:150px;
+	border:1px red solid;
+	margin:auto;
+	padding:5px;
+	margin-left:20px;
+	overflow:hidden;
+	float:left;
+}
+
+.tile-image.big-illustration {
+	height: 111px;
+	margin-top: 20px;
+	width: 112px;
+}
+
+.tile-image {
+	height: 100px;
+	margin: 31px 0 27px;
+	vertical-align: bottom;
+}
+
+.tile {
+	background-color: #ecf0f5;
+	border-radius: 6px;
+	padding: 14px;
+	position: relative;
+	text-align: center;
+	min-height: 328px;
+}
+
+.midaTile{
+	width:25%;
+	float:left;
+	position: relative;
+	height:328px;
+	min-height: 325px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/************PEU DE PÀGINA INDEX***********/
+footer>.inner {
+	width:1024px;
+	margin:auto;
+	overflow:hidden;
+	clear:both;
+}
+
+.links {
+	width:500px;
+	height: auto;
+	float: left;
+	display: inline-block;
+	margin-left:-40px;
+	margin-top:32px;
+}
+
+.link {
+	height: auto;
+	float: left;
+	display: inline-block;
+	margin-right: 4px;
+}
+
+li.link:before{
+	content:"|";
+	font-size:14px;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color:rgb(24,188,146);
+	font-weight:bold;
+}
+
+li.link:nth-child(1):before{
+	content:normal;
+}
+
+.lletra_foot{
+	font-size: 14px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-weight: bold;
+}
+
+.rights{
+	float: right;
+	margin-top: 32px;
+	height: auto;
+	color:white;
+	display: inline-block;	
+}
+
+/*Estils de l'input file de la imatge de perfil*/
+label.imagebutton {
+    width:50px;
+    height:50px;
+    overflow:hidden;
+    position:relative;
+}
+
+.textLlarg{
+	width:1024px;
+	height:600px;
+	overflow:auto;
+	margin:auto;
+	margin-top:22px;
+	margin-bottom:5px;
+}
